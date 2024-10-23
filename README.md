@@ -172,7 +172,7 @@ Based on the Churn_Modelling results using ANN classification, the following rec
 
 - Continual Refinement: Retrain the model periodically to adapt to evolving customer behavior and market changes.
 
-- By following these steps, the bank can effectively reduce churn and improve customer retention.
+By following these steps, the bank can effectively reduce churn and improve customer retention.
 
 # Author 
 
