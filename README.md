@@ -1,43 +1,42 @@
 # Churn_Modelling_ANN_Project_Python
 
-## Customer Churn Prediction - European Bank
+## Customer Churn Prediction - European Bank -Python (Google Colab Notebook)
 
 ## Business Problem Description
 A European bank has observed an unexpected rise in customer churn, with more clients leaving than anticipated. To understand this issue, the bank conducted a study by selecting a random sample of 10,000 customers across Europe and collected data on various demographic and financial characteristics. Over six months, the bank tracked which customers stayed and which left, recording the outcome as a binary variable. The bank seeks a data scientist's expertise to analyze this dataset and identify at-risk customers.
 
 ## Business Goal
-The primary goal is to develop a geodemographic segmentation model to predict customer churn. By identifying customers most at risk of leaving, the bank can implement targeted strategies to retain them. And, for this analysis, I developed an Artifical Neural Network Model through Deep Learning.
+The primary goal of this project is to develop a geodemographic segmentation model to predict customer churn. By identifying customers who are most at risk of leaving, the bank can proactively implement targeted strategies to retain them and enhance customer loyalty. To achieve this, I have developed an Artificial Neural Network (ANN) model using deep learning techniques, which leverages customer data to deliver accurate churn predictions and provide valuable insights for effective retention strategies.
 
-## Dataset and Variables
-The dataset includes the following variables:
+## Dataset and Variables: The dataset used for this analysis has been sourced from the UCI Machine Learning Repository, which provides a reliable foundation for building the geodemographic segmentation model to predict customer churn.
 
-RowNumber: Sequential identifier of rows (irrelevant for analysis).
+```RowNumber:``` Sequential identifier of rows (irrelevant for analysis).
 
-CustomerID: Unique ID for each customer.
+```CustomerID:``` Unique ID for each customer.
 
-Surname: Customer's last name (irrelevant for prediction).
+```Surname:``` Customer's last name (irrelevant for prediction).
 
-CreditScore: Numerical score indicating creditworthiness.
+```CreditScore:``` Numerical score indicating creditworthiness.
 
-Geography: Country of residence (e.g., France, Germany, Spain).
+```Geography:``` Country of residence (e.g., France, Germany, Spain).
 
-Gender: Customer's gender (Male/Female).
+```Gender:``` Customer's gender (Male/Female).
 
-Age: Customer's age.
+```Age:``` Customer's age.
 
-Tenure: Number of years with the bank.
+```Tenure:``` Number of years with the bank.
 
-Balance: Current account balance.
+```Balance:``` Current account balance.
 
-NumOfProducts: Number of bank products used.
+```NumOfProducts:``` Number of bank products used.
 
-HasCrCard: Indicator of credit card ownership (1 = Yes, 0 = No).
+```HasCrCard:``` Indicator of credit card ownership (1 = Yes, 0 = No).
 
-IsActiveMember: Indicator of active membership status (1 = Active, 0 = Inactive).
+```IsActiveMember:``` Indicator of active membership status (1 = Active, 0 = Inactive).
 
-EstimatedSalary: Estimated annual salary.
+```EstimatedSalary:``` Estimated annual salary.
 
-Exited: Dependent variable indicating churn (1 = Yes, 0 = No).
+```Exited:``` Dependent variable indicating churn (1 = Yes, 0 = No).
 
 ## Artificial Neural Network (ANN) Model
 
@@ -149,9 +148,29 @@ So, should we say goodbye to that customer?
 #Predicting single customer's churn rate
 print(ann.predict(sc.transform([[1, 0, 0, 600, 1, 40, 3, 60000, 2, 1, 1, 50000]]))> 0.5)
 ```
-This README outlines the project scope and provides details on the dataset and Artificial Neural Network Model (Classification) used for predicting customer churn in the European bank in order to provide detailed insight of the bank's customer churning dataset and recommendations for the client to take actions against the customer churning to dveelop performance.
+# Result: Here, we see the predicted probability of customer leaing the bank is 0.03 which is < 0.5. Since, If predicted probability of customer leaving the bank is > 0.5, then, its "True", Otherwise "False". Therefore, our ANN model predicts that this customer stays in the bank!
 
-## Author 
+# Conclusion:
+
+The model's accuracy indicates that out of 100 customers, approximately 86 were correctly predicted, making it a promising tool for predicting customer churn. Despite some misclassifications, the model effectively identifies churn patterns, offering valuable insights for the bank to target retention efforts and reduce customer attrition. However, there is room for improvement, especially in minimizing false predictions related to customers who were predicted to leave but actually stayed.
+
+# Recommendations: 
+
+Based on the Churn_Modelling results using ANN classification, the following recommendations can be made for the bank:
+
+- Targeted Retention: Use the model to focus retention efforts on customers at risk of leaving through personalized offers and loyalty programs.
+
+- Monitor and Adjust: Regularly review the model’s predictions against actual outcomes to fine-tune retention strategies and improve accuracy.
+
+- Focus on High-Risk Segments: Analyze customers incorrectly predicted to stay but who actually left, refining strategies for these segments to reduce future churn.
+
+- Leverage Model Success: Use the model’s high accuracy to allocate resources effectively towards customers likely to stay, optimizing retention efforts.
+
+- Continual Refinement: Retrain the model periodically to adapt to evolving customer behavior and market changes.
+
+- By following these steps, the bank can effectively reduce churn and improve customer retention.
+
+# Author 
 
 Debolina Dutta
 
