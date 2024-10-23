@@ -8,7 +8,9 @@ A European bank has observed an unexpected rise in customer churn, with more cli
 ## Business Goal
 The primary goal of this project is to develop a geodemographic segmentation model to predict customer churn. By identifying customers who are most at risk of leaving, the bank can proactively implement targeted strategies to retain them and enhance customer loyalty. To achieve this, I have developed an Artificial Neural Network (ANN) model using deep learning techniques, which leverages customer data to deliver accurate churn predictions and provide valuable insights for effective retention strategies.
 
-## Dataset and Variables: The dataset used for this analysis has been sourced from the UCI Machine Learning Repository, which provides a reliable foundation for building the geodemographic segmentation model to predict customer churn.
+# Dataset and Variables: 
+
+The dataset used for this analysis has been sourced from the UCI Machine Learning Repository, which provides a reliable foundation for building the geodemographic segmentation model to predict customer churn.
 
 ```RowNumber:``` Sequential identifier of rows (irrelevant for analysis).
 
