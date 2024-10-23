@@ -148,7 +148,9 @@ So, should we say goodbye to that customer?
 #Predicting single customer's churn rate
 print(ann.predict(sc.transform([[1, 0, 0, 600, 1, 40, 3, 60000, 2, 1, 1, 50000]]))> 0.5)
 ```
-# Result: Here, we see the predicted probability of customer leaing the bank is 0.03 which is < 0.5. Since, If predicted probability of customer leaving the bank is > 0.5, then, its "True", Otherwise "False". Therefore, our ANN model predicts that this customer stays in the bank!
+- Result:
+
+Here, we see the predicted probability of customer leaing the bank is 0.03 which is < 0.5. Since, If predicted probability of customer leaving the bank is > 0.5, then, its "True", Otherwise "False". Therefore, our ANN model predicts that this customer stays in the bank!
 
 # Conclusion:
 
